@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .top-menu {
+        background-color: #f4f4f4;
+    }
+
+    .top-menu a {
+        font-size: 14px !important;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .top-menu a {
+        float: left;
+        text-align: center;
+        padding: 18px 17px;
+        text-decoration: none;
+        font-size: 17px;
+        text-transform: capitalize;
+    }
+
+    .top-menu a:first-child {
+        padding-left: 0;
+    }
+
+    .top-menu-right a:last-child {
+        padding-right: 0;
+    }
+
+    .top-menu-right {
+        float: right;
+    }
+
+    a {
+        color: #2980b9;
+    }
+
+    a:hover {
+        color: #e74c3c;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .color__red {
+        color: #e74c3c;
+    }
+
+    .clearfix {
+        overflow: auto;
+    }
+
+    .topbar,
+    .topbar1 {
+        margin-top: 20px;
+        background-color: #f4f4f4;
+    }
+
+    .topbar a {
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 18px 17px;
+        display: inline-block;
+        float: left;
+    }
+
+    .topbar1 a {
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .topbar1 ul {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .topRight {
+        float: right;
+    }
+
+    .topbar a:first-child {
+        padding-left: 0;
+    }
+
+    .topbar a:last-child {
+        padding-right: 0;
+    }
+
+    .topbar1 li {
+        display: inline-block;
+        float: left;
+        padding: 18px 17px;
+    }
+
+    .topbar1 li:first-child {
+        padding-left: 0px;
+    }
+
+    .topBar {
+        padding-left: 0 !important;
+        margin-top: 20px;
+        background-color: #f4f4f4;
+    }
+
+    .topBar li {
+        padding: 18px 17px;
+        display: inline-block;
+        float: left;
+    }
+
+    .topBar li a {
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .topBarRight {
+        float: right;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top-menu clearfix">
+        <div class="container">
+            <a href="#" class="color__red">Global</a>
+            <a href="#">Regions</a>
+            <div class="top-menu-right">
+                <a href="#">English</a>
+                <a href="#">français</a>
+                <a href="#">русский</a>
+                <a href="#">español</a>
+            </div>
+        </div>
+    </div>
+    <div class="topbar clearfix">
+        <div class="container">
+            <a href="#">Global</a>
+            <a href="#">Regions</a>
+            <div class="topRight">
+                <a href="#">English</a>
+                <a href="#">français</a>
+                <a href="#">русский</a>
+                <a href="#">español</a>
+            </div>
+        </div>
+    </div>
+    <nav class="topbar1 clearfix">
+        <div class="container">
+            <ul>
+                <li><a href="#">Global</a></li>
+                <li><a href="#">Region</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav>
+        <ul class="topBar clearfix">
+            <li><a href="#">Global</a></li>
+            <li><a href="#">Region</a></li>
+            <ul class="topBarRight">
+                <li>
+                    <a href="#">English</a>
+                </li>
+                <li>
+                    <a href="#">français</a>
+                </li>
+                <li>
+                    <a href="#">русский</a>
+                </li>
+                <li>
+                    <a href="#">español</a>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+</body>
+
+</html>

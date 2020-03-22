@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Topbar with dropdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    .topbar {
+        background-color: #f4f4f4;
+        width: 100%;
+    }
+
+    .topbar a {
+        float: left;
+        padding: 18px 17px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #2980b9;
+    }
+
+    .topbar a:hover {
+        color: #e74c3c;
+    }
+
+    .topRight {
+        float: right;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .clearfix {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .topbar a:first-child {
+        padding-left: 0;
+    }
+
+    .topbar a:last-child {
+        padding-right: 0;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-btn {
+        padding: 15px 28px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #2980b9;
+        border: 1px solid #2980b9;
+        background-color: #f4f4f4;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 230px;
+        z-index: 1;
+        display: none;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #2980b9;
+        text-transform: capitalize;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-top: 3px;
+    }
+
+       .topBar {
+        padding-left: 0 !important;
+        margin-top: 20px;
+        background-color: #f4f4f4;
+        width: 100%;
+    }
+
+    .topBar li {
+        padding: 18px 17px;
+        display: inline-block;
+        float: left;
+    }
+
+    .topBar li a {
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .topBarRight {
+        float: right;
+    }
+
+    a {
+        color: #2980b9;
+    }
+
+    a:hover {
+        color: #e74c3c;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="topbar clearfix">
+        <div class="container">
+            <a href="#">Global</a>
+            <a href="#"><span>Region</span></a>
+            <div class="topRight">
+                <a href="#">English</a>
+                <a href="#">français</a>
+                <a href="#">русский</a>
+                <a href="#">español</a>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 20px"></div>
+    <div class="container">
+        <div class="dropdown">
+            <button class="dropdown-btn">Choose your language</button>
+            <div class="dropdown-content">
+                <a href="#">English</a>
+                <a href="#">français</a>
+                <a href="#">русский</a>
+                <a href="#">español</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn">Another option</button>
+            <div class="dropdown-content">
+                <a href="#">Hello there</a>
+                <a href="#">another one</a>
+                <a href="#">русский</a>
+                <a href="#">español</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 20px">
+      <nav>
+        <ul class="topBar clearfix">
+            <li><a href="#">Global</a></li>
+            <li><a href="#">Region</a></li>
+            <ul class="topBarRight">
+                <li class="dropdown">
+                    <a href="#">English</a>
+                    <div class="dropdown-content" style="right: 0; margin-top: 20px">
+                        <a href="#">Hello there</a>
+                        <a href="#">another one</a>
+                        <a href="#">русский</a>
+                        <a href="#">español</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">français</a>
+                    <div class="dropdown-content" style="right: 0; margin-top: 20px">
+                        <a href="#">Just another one</a>
+                        <a href="#">español</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">русский</a>
+                </li>
+                <li>
+                    <a href="#">español</a>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+    </div>
+</body>
+
+</html>

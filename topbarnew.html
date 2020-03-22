@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Topbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    nav {
+        background-color: #f4f4f4;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #2980b9;
+    }
+
+    nav a:hover {
+        color: #e74c3c;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 16px 17px;
+        float: left;
+        position: relative;
+    }
+
+    nav li:first-child {
+        padding-left: 0;
+    }
+
+    nav li:last-child {
+        padding-right: 0;
+    }
+
+    nav ul {
+        padding-left: 0px;
+        margin: 0;
+    }
+
+    .clearfix {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .topRight {
+        float: right;
+    }
+
+    .dropdown-content {
+    	right: 0;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 230px;
+        z-index: 1;
+        display: none;
+        margin-top: 18px !important;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #2980b9;
+        text-transform: capitalize;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-top: 3px;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="container clearfix">
+        <ul>
+            <li><a href="#">Global</a></li>
+            <li><a href="#">Region</a></li>
+            <ul class="topRight">
+            	  <li class="dropdown">
+                    <span>
+                        <a href="#">Features <i class="fa fa-chevron-down"></i></a>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="#">New features</a>
+                        <a href="#">français</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <span>
+                        <a href="#">Services <i class="fa fa-chevron-down"></i></a>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="#">English</a>
+                        <a href="#">français</a>
+                        <a href="#">русский</a>
+                        <a href="#">español</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Pусский</a>
+                </li>
+                <li>
+                    <a href="#">Español</a>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+</body>
+
+</html>

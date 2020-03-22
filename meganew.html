@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .clearfix {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    a {
+        color: #2980b9;
+    }
+
+    a:hover {
+        color: #e74c3c;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .topBar {
+        padding-left: 0 !important;
+        background-color: #f4f4f4;
+        width: 100%;
+    }
+
+    .topBar li {
+        padding: 18px 17px;
+        display: inline-block;
+        float: left;
+    }
+
+    .topBar li a {
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .topBarRight {
+        float: right;
+    }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  margin-top: 20px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="topBar clearfix">
+            <li><a href="#">Global</a></li>
+            <li><a href="#">Region</a></li>
+            <ul class="topBarRight">
+                <li class="dropdown">
+                    <a href="#">Services <i class="fa fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                            <div class="container">
+                                <h2>Mega Menu 01</h2>
+                            </div>
+                    </div>
+                </li>
+               <li class="dropdown">
+                    <a href="#">Features <i class="fa fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                            <div class="container">
+                                <h2>Mega Menu 02</h2>
+                            </div>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+</body>
+
+</html>
